@@ -1,0 +1,31 @@
+{
+    "ElasticNet": {
+        "C": 0.02,
+        "l1_ratio": 0.06
+    },
+    "Lasso": {
+        "C": 2,
+        "solver": "liblinear"
+    },
+    "Ridge": {
+        "C": 0.01,
+        "solver": "lbfgs"
+    },
+    "RandomForestClassifier": {
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_estimators": 100
+    },
+    "XGBClassifier": {
+        "colsample_bytree": 0.9,
+        "gamma": 0,
+        "learning_rate": 0.008,
+        "max_depth": 8,
+        "min_child_weight": 1,
+        "n_estimators": 500,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1,
+        "subsample": 1
+    }
+}
