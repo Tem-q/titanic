@@ -6,7 +6,7 @@ This repository contains my solution to the [Titanic - Machine Learning from Dis
 - **`train.csv`**: Training dataset provided by Kaggle.
 - **`test.csv`**: Test dataset provided by Kaggle.
 - **`titanic_solution.ipynb`**: Jupyter Notebook containing data preprocessing, feature engineering, model training, and evaluation.
-- **`best_params.json`**: JSON file containing the best hyperparameters for the models used in the Stacking Regressor.
+- **`best_params.json`**: JSON file containing the best hyperparameters for the models used in the Stacking Classifier.
 - **`submission.csv`**: Final submission file with predictions for the test dataset.
 
 ## Methodology
@@ -21,11 +21,11 @@ This repository contains my solution to the [Titanic - Machine Learning from Dis
      - Logistic Regression (L1 and L2 regularization)
      - Random Forest
      - XGBoost
-   - A **Stacking Regressor** was used to combine the predictions of these models for improved performance.
+   - A **Stacking Classifier** was used to combine the predictions of these models for improved performance.
 
 3. **Hyperparameter Tuning**:
-   - Hyperparameters were optimized using grid search and cross-validation.
+   - Hyperparameters were optimized using grid search and K-fold cross-validation.
    - The optimal parameters are stored in `best_params.json`.
 
 4. **Submission**:
-   - Predictions were made using the trained Stacking Regressor and saved in `submission.csv`.
+   - Predictions were made using the trained Stacking Classifier and saved in `submission.csv`.
